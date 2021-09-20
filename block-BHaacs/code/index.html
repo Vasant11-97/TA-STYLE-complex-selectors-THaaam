@@ -8,21 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b4a150b01.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-            <nav class="container flex justify-content align-items">
-                <ul>
-                    <li><a class="brand" href="#">TrackL</a></li>
-                </ul>
-                <ul class="nav flex justify-content align-items">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </nav>
+    <header class="header padding">
+        <div class="container flex justify-content align-item">
+            <div class="brand">
+                <a href="#">TrackL</a>
+            </div>
+            <div class="flex align-items">
+                <label class="bars" for="toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input id="toggle" type="checkbox">
+            
+                <nav class="nav-toggle header-nav flex align-item justify-content">
+                    <ul class="flex">
+                        <li class="active">
+                            <a href="#">Feature</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -39,10 +58,10 @@
         </section>
         <section class="container file-section">
             <div class="flex justify-content align-items">
-                <div><a href="#pdf">PDF FILE</a></div>
-                <div><a href="#doc">WORD FILE</a></div>
-                <div><a href="#jpg">IMAGE FILE</a></div>
-                <div><a href="#mp4">VIDEO FILE</a></div>
+                <div class="sm-flex-100"><a href="#pdf">PDF FILE</a></div>
+                <div class="sm-flex-100"><a href="#doc">WORD FILE</a></div>
+                <div class="sm-flex-100"><a href="#jpg">IMAGE FILE</a></div>
+                <div class="sm-flex-100"><a href="#mp4">VIDEO FILE</a></div>
             </div>
             <hr>
         </section>
@@ -54,7 +73,7 @@
                 <p>
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                 </p>
-                <button class="btn"><a href="#">Learn More</a></button>
+                <a class="learn" href="#">Learn More</a>
             </div>
             <div class="flex-48 container">
                 <img src="../assets/learning-graph.png" alt="Learning graph Image">
@@ -126,11 +145,125 @@
                     </div>
                 <strong>Yearly</strong>
             </div>
+           <div class="flex justify-content align-items container">
+                <div class="flex-48">
+                    <h4>
+                        Basic
+                    </h4>
+                    <p>It is a long established fact that a reader will br distracted by a readable</p>
+                    <small>48</small>
+                    <hr>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>50 courses a day</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>4 forums month</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>16 chapters a day</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/cross.png" alt="Tick"></li>
+                        <li>Private lessons once a week</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/cross.png" alt="Tick"></li>
+                        <li>Get weekly reward</li>
+                    </ul>
+                    <button class="white"><a href="#">Get Started</a></button>
+
+                </div>
+                <div class="flex-48">
+                    <h4>
+                        Most Popular
+                    </h4>
+                    <p>It is a long established fact that a reader will br distracted by a readable</p>
+                    <small>58</small>
+                    <hr>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>50 courses a day</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>4 forums month</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>16 chapters a day</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>Private lessons once a week</li>
+                    </ul>
+                    <ul class="flex align-items">
+                        <li><img src="../assets/tick.png" alt="Tick"></li>
+                        <li>Get weekly reward</li>
+                    </ul>
+                    <button class="btn"><a href="#">Get Started</a></button>
+                </div>
+           </div>
+        </section>
+        <section class="trial-section container">
+                <h2>Start Your 30 Days Trial Now!</h2>
+                <button class="white"><a href="#">Get Started</a></button>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="container footer flex justify-content align-items">
+        <div class="flex-40 container">
+            <h6>
+                Trackl
+            </h6>
+            <p>
+                Far far away, behind the word of mountains, far from the world
+            </p>
+            <nav class="flex align-items">
+                <div class="circle">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="circle">
+                    <a href="#"><i class="fab fa-instagram"></i></i></a>
+                </div>
+                <div class="circle">
+                    <a href="#"><i class="fab fa-twitter"></i></i></a>
+                </div>
+            </nav>
+        </div>
+        <div class="flex-20">
+            <h5>
+                Features
+            </h5>
+            <ul>
+                <li>Celender</li>
+                <li>Forum</li>
+                <li>Messenger</li>
+                <li>Schedule</li>
+            </ul>
+        </div>
+        <div class="flex-20">
+            <h5>
+                Support
+            </h5>
+            <ul>
+                <li>About Us</li>
+                <li>Career</li>
+                <li>FAQs</li>
+                <li>Security</li>
+            </ul>
+        </div>
+        <div class="flex-20">
+            <h5>
+                Contact
+            </h5>
+            <ul class="alignment">
+                <li><a href="mailto:abc@example.com?subject = Feedback&body = Message">hello.trackle.io</a></li>
+                <li>(+00) 0000000000</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
